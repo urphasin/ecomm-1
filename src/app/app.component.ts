@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PrimaryButtonComponent } from "./components/primary-button/primary-button.component";
+import { ProductsListComponent } from "./pages/products-list/products-list.component";
+import { HeaderComponent } from "./components/header/header.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PrimaryButtonComponent],
+  imports: [RouterOutlet,ProductsListComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
